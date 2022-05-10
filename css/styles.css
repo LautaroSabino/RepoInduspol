@@ -1,0 +1,663 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box
+}
+
+/*...................INDEX........................*/
+
+.grillaIndex {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "footer footer"
+        "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+
+/*....................BUTTONS...........................*/
+
+.btn {
+    width: 180px;
+    padding: 20px;
+    background-color: #D9322B;
+    box-shadow: 5px 5px 10px;
+    margin: 1em;
+    text-align: center;
+    margin: 40px;
+
+}
+
+.btn a {
+    color: #E4E3E3;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+/*....................BDOY IN GENERAL....................*/
+
+body {
+    background-color: #fcf7ff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+}
+
+/*.........................HEADER...........................*/
+
+.header {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 4px solid lightslategrey;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    height: 60px;
+    width: auto;
+    margin-left: 7%;
+}
+
+.nav {
+    list-style: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 0%;
+}
+
+.nav li a {
+    color: #E5373D;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px;
+}
+
+.nav li {
+    display: flex;
+    display: inline;
+}
+
+.nav form {
+    display: inline;
+}
+
+.li {
+    width: 20px;
+    height: auto;
+    margin-right: 3px;
+}
+
+.nav li a:hover {
+    background-color: rgb(190, 183, 183);
+    border: 1px solid rgb(73, 70, 70);
+}
+
+/* ...............MAIN.................... */
+
+.mainIndex {
+    background-image: url(../background/nav.jpg);
+    background-size: cover;
+    padding: 10px;
+    border-bottom: #948888 solid 4px;
+    width: 70%;
+    margin: auto;
+}
+
+
+.title {
+    margin-top: 20px;
+    white-space: pre-line;
+    text-align: center;
+}
+
+
+.mainTitle{
+    flex-direction: column;
+    align-items:center ;
+    margin: 0% auto
+}
+
+
+.title {
+    margin-top: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-top: 10px;
+    text-align: center;
+    margin: 40px;
+    font-weight: 400;
+}
+
+.titleCoverpage {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainCoverpage{
+    justify-content: center;
+}
+
+.coverpage {
+    border: 8px solid rgb(188, 188, 183);
+    box-shadow: 5px 5px 10px;
+    width: 50%;
+    height: auto;
+    margin: 1em;
+    align-items: center;
+}
+
+/* ....................FOOTER.................... */
+
+footer {
+    padding: 10px;
+    margin: 30px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 4px solid lightslategrey;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer__span {
+    font-size: small;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #E5373D;
+    margin: 40px;
+}
+
+.mapRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:wrap ;
+}
+
+.mapTitle {
+    padding-bottom: 20px;
+    color: #D9322B
+}
+
+.redtitle {
+    color: #D9322B;
+}
+
+.map {
+    padding: 5vh;
+    text-align: center;
+    background-color: #E4E3E3;
+    border: solid 2px rgb(210, 207, 207);
+    box-shadow: 5px 5px 10px;
+    margin: 1em;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+}
+
+.redes {
+    padding: 10px;
+    height: 10em;
+    text-align: center;
+    background-color: #E4E3E3;
+    border: solid 2px rgb(210, 207, 207);
+    box-shadow: 5px 5px 10px;
+    margin: 1em;
+    border-radius: 10%;
+}
+
+.redes__logo {
+    margin: 20px;
+    height: 30px;
+}
+
+.section__anchors {
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+/*....................PAGES: GALERIA....................*/
+
+.grillaGaleria {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "main main"
+        "main main"
+        "footer footer"
+        "footer footer";
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat (6, 5fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.mainGaleria{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titleGaleria {
+    background-image: url(../background/nav.jpg);
+    background-size: cover;
+    font-weight: 200;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #948888 solid 5px;
+}
+
+.cardsGaleria {
+    background-color: #faecec;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    padding: 10vh;
+    background-color: #E4E3E3;
+    border: solid 2px rgb(210, 207, 207);
+    box-shadow: 5px 5px 10px;
+    margin: 1em;
+    border-radius: 5%;
+}
+
+.uno {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.redtitle {
+    color: #D9322B;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.chico {
+    width: 40vh;
+    border: #948888 solid 2px;
+}
+
+/*....................PAGES: EMPRESA....................*/
+
+.grillaEmpresa {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "main main"
+        "main main"
+        "footer footer"
+        "footer footer";
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat (6, 5fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grillaEmpresa {
+    flex-direction: column;
+}
+
+.mainEmpresa{
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0% auto;
+
+}
+
+.titleEmpresa {
+    background-image: url(../background/nav.jpg);
+    background-size: cover;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: xx-large;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #948888 solid 5px;
+}
+
+.infoEmpresa {
+    flex-direction: column;
+}
+
+.title_empresa {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: xx-large;
+    margin-left: 40px;
+}
+
+.parrafo_empresa {
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.fotoempresa {
+    border: 5px solid #948888;
+    margin-left: 20px;
+}
+
+.empresa {
+    padding: 10vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.empresa2 {
+    padding: 10vh;
+    flex-direction: column;
+}
+
+.empresa3{
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    margin: 15px;
+    padding: 30px;
+    border: #948888 solid 2px;
+}
+/*....................PAGES: PRODUCTOS....................*/
+
+.grillaProductos {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "main main"
+        "main main"
+        "footer footer"
+        "footer footer";
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat (6, 5fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grillaProductos {
+    flex-direction: column;
+}
+
+.mainProductos{
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0% auto;
+}
+
+
+.titleProductos {
+    background-image: url(../background/nav.jpg);
+    background-size: cover;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: xx-large;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #948888 solid 5px;
+}
+
+.infoProductos {
+    flex-direction: column;
+
+}
+
+/*....................PAGES: CONTACTOS....................*/
+
+.grillaContactos {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "main main"
+        "main main"
+        "footer footer"
+        "footer footer";
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat (6, 5fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grillaContactos {
+    flex-direction: column;
+}
+
+.mainContactos{
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0% auto;
+}
+
+
+.titleContactos {
+    background-image: url(../background/nav.jpg);
+    background-size: cover;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: xx-large;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #948888 solid 5px;
+}
+
+.subtitleContactos {
+    font-size: x-large;
+    padding: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.formContactos {
+    margin: 20px;
+    flex-direction: column;
+    align-items:flex-start;
+    font-weight: 700;
+}
+
+.formUno {
+    padding: 20px;
+    margin: 10px;
+}
+
+.formDos {
+    padding: 30px;
+    margin: 10px;
+}
+
+.sino{
+    justify-content: space-evenly;
+}
+
+.formTres {
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContacto {
+    width: 40vh;
+    margin-left: 10vh;
+}
+
+.image__form {
+    justify-content: center;
+}
+
+.susano {
+    display: flex;
+    padding: 10vh;
+    background-color: #fffdfd;
+    border: solid 2px rgb(210, 207, 207);
+    box-shadow: 5px 5px 10px;
+    margin: 1em;
+    border-radius: 5%;
+}
+
+
+/*................MEDIDAS QUERIES.........................*/
+
+@media screen and(min-width:768px) {
+    .grillaGaleria {
+        display: grid;
+        grid-template-areas: "header header header"
+            "main main main"
+            "main main main"
+            "main main main"
+            "footer footer footer"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: repeat (6, 5fr);
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    header {
+        grid-area: header;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    *main{
+        width: 95%;
+    }
+
+    .mainIndex{
+        width: 95%;
+    }
+
+    .titleCoverpage{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .coverpage{
+        width: 100%;
+    }
+}
+
+
+
+/*............COSAS PARA TENER EN CUENTA.....................
+
+Al poner en Margin: 0% auto; puede centrar cosas*/
