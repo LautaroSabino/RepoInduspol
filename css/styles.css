@@ -88,10 +88,11 @@ img {
     border-bottom: 4px solid lightslategrey;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: #161A1D;
 }
 
 .header__logo {
-    height: 60px;
+    height: 70px;
     width: auto;
     margin-left: 7%;
 }
@@ -104,7 +105,7 @@ img {
 }
 
 .nav li a {
-    color: #E5373D;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 10px;
     margin: 15px;
@@ -126,7 +127,7 @@ img {
 }
 
 .nav li a:hover {
-    background-color: rgb(190, 183, 183);
+    background-color: #a4161a;
     border: 1px solid rgb(73, 70, 70);
 }
 
