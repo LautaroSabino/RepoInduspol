@@ -1,8 +1,10 @@
 * {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,500&display=swap');
 
 /*...................INDEX........................*/
 
@@ -38,7 +40,7 @@ footer {
 .btn {
     width: 180px;
     padding: 20px;
-    background-color: #D9322B;
+    background-color: #ba181b;
     box-shadow: 5px 5px 10px;
     margin: 1em;
     text-align: center;
@@ -64,9 +66,13 @@ footer {
 
 body {
     background-color: #fcf7ff;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     padding: 20px;
+}
+
+main{
+    background-color: #E4E3E3;
 }
 
 img {
@@ -88,10 +94,11 @@ img {
     border-bottom: 4px solid lightslategrey;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: #161A1D;
 }
 
 .header__logo {
-    height: 60px;
+    height: 70px;
     width: auto;
     margin-left: 7%;
 }
@@ -104,7 +111,7 @@ img {
 }
 
 .nav li a {
-    color: #E5373D;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 10px;
     margin: 15px;
@@ -119,35 +126,20 @@ img {
     display: inline;
 }
 
-.li {
-    width: 20px;
-    height: auto;
-    margin-right: 3px;
-}
-
 .nav li a:hover {
-    background-color: rgb(190, 183, 183);
+    background-color: #a4161a;
     border: 1px solid rgb(73, 70, 70);
 }
 
 /* ...............MAIN.................... */
 
 .mainIndex {
-    background-image: url(../background/nav.jpg);
+    background-image: url(../img/fotoPortada.png);
     background-size: cover;
     padding: 10px;
     border-bottom: #948888 solid 4px;
-    width: 70%;
     margin: auto;
 }
-
-
-.title {
-    margin-top: 20px;
-    white-space: pre-line;
-    text-align: center;
-}
-
 
 .mainTitle{
     flex-direction: column;
@@ -155,18 +147,22 @@ img {
     margin: 0% auto
 }
 
-
 .title {
+    white-space: pre-line;
+    text-align: center;
+    color:#FFFFFF;
     margin-top: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 200;
+
 }
 
 .subtitle {
     margin-top: 10px;
     text-align: center;
     margin: 40px;
-    font-weight: 400;
+    text-transform: lowercase;
+    font-weight: 200;
+    color:#FFFFFF
 }
 
 .titleCoverpage {
@@ -178,78 +174,51 @@ img {
     justify-content: center;
 }
 
-.coverpage {
-    border: 8px solid rgb(188, 188, 183);
-    box-shadow: 5px 5px 10px;
-    width: 50%;
-    height: auto;
-    margin: 1em;
-    align-items: center;
-}
-
 /* ....................FOOTER.................... */
 
 footer {
     padding: 10px;
-    margin: 30px;
+    margin: 20px;
 }
 
-.footer__info {
-    display: flex;
-    justify-content: space-evenly;
-    border-top: 4px solid lightslategrey;
-    text-align: center;
-    padding-top: 10px;
-}
 
-.footer__span {
-    font-size: small;
-}
-
-.footer__link {
-    text-decoration: none;
-    color: #E5373D;
-    margin: 40px;
-}
 
 .mapRedes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap:wrap ;
+    flex-wrap:wrap;
 }
 
 .mapTitle {
     padding-bottom: 20px;
-    color: #D9322B
+    color: #ba181b;
 }
 
 .redtitle {
-    color: #D9322B;
+    color: #ba181b;
 }
 
 .map {
-    padding: 5vh;
+    width: 80vh;
+    padding: 40px;
     text-align: center;
     background-color: #E4E3E3;
-    border: solid 2px rgb(210, 207, 207);
-    box-shadow: 5px 5px 10px;
-    margin: 1em;
-    border-radius: 5%;
+    border: solid 2px #e5383b;
     display: flex;
     flex-direction: column;
     white-space: pre-line;
 }
 
 .redes {
-    padding: 10px;
+    width: 80vh;
+    padding: 40px;
     height: 10em;
     text-align: center;
     background-color: #E4E3E3;
-    border: solid 2px rgb(210, 207, 207);
-    box-shadow: 5px 5px 10px;
-    margin: 1em;
-    border-radius: 10%;
+    border: solid 2px #e5383b;
+    margin-top: 0%;
+    margin-bottom: 20px;
 }
 
 .redes__logo {
@@ -264,7 +233,27 @@ footer {
     text-align: center;
     text-decoration: none;
     flex-wrap: wrap;
+    background-color: #a4161a;
 }
+
+.footer__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 40px;
+}
+
+
+.footerInfo {
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    border-top: 4px solid rgb(119, 136, 153);
+    text-align: left;
+    padding-top: 10px;
+    background-color: #161A1D;
+}
+
+
 
 /*....................PAGES: GALERIA....................*/
 
@@ -651,13 +640,14 @@ footer {
         justify-content: space-around;
     }
 
-    .coverpage{
-        width: 100%;
-    }
 }
 
 
 
 /*............COSAS PARA TENER EN CUENTA.....................
 
-Al poner en Margin: 0% auto; puede centrar cosas*/
+Al poner en Margin: 0% auto; puede centrar cosas
+
+EJEMPLO DE BOX SHADOW
+box-shadow: 5px 5px 10px;
+margin: 1em;*/
