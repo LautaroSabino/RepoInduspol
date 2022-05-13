@@ -45,34 +45,27 @@ footer {
     margin: 1em;
     text-align: center;
     margin: 40px;
-
 }
 
 .btn a {
     color: #E4E3E3;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
     cursor: pointer;
-    transition: .3s ease all;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .btn:hover {
     background-color: #000000;
+    transition: all .6s;
 }
 
 /*....................BDOY IN GENERAL....................*/
 
 body {
-    background-color: #fcf7ff;
+    background-color: #E4E3E3;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    padding: 20px;
-}
-
-main{
-    background-color: #E4E3E3;
 }
 
 img {
@@ -98,8 +91,8 @@ img {
 }
 
 .header__logo {
-    height: 70px;
-    width: auto;
+    width: 80px;
+    height: auto;
     margin-left: 7%;
 }
 
@@ -113,6 +106,7 @@ img {
 .nav li a {
     color: #FFFFFF;
     text-decoration: none;
+    text-transform: uppercase;
     padding: 10px;
     margin: 15px;
 }
@@ -127,8 +121,8 @@ img {
 }
 
 .nav li a:hover {
-    background-color: #a4161a;
-    border: 1px solid rgb(73, 70, 70);
+    color: #a4161a;
+    transition: all .3s;
 }
 
 /* ...............MAIN.................... */
@@ -200,7 +194,6 @@ footer {
 }
 
 .map {
-    width: 80vh;
     padding: 40px;
     text-align: center;
     background-color: #E4E3E3;
@@ -210,9 +203,14 @@ footer {
     white-space: pre-line;
 }
 
+.mapGoogle{
+    width: 100%;
+    margin-left: 40px;
+}
+
 .redes {
     width: 80vh;
-    padding: 40px;
+    padding: 30px;
     height: 10em;
     text-align: center;
     background-color: #E4E3E3;
