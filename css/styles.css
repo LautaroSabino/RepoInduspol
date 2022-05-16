@@ -458,22 +458,24 @@ footer {
 .mainProductos{
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 60%;
     margin: 0% auto;
 }
 
 
 .titleProductos {
-    background-image: url(../background/nav.jpg);
-    background-size: cover;
-    font-weight: 800;
+    background-image: url(../img/fotoPortada.png);
+    background-position: 50%;
+    background-size:cover;
+    padding: 70px;
+    margin: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
     text-transform: uppercase;
-    font-size: xx-large;
-    height: 40vh;
-    align-items: center;
-    justify-content: center;
+    color: #FFFFFF;
+    justify-content: space-around;
     border-bottom: #948888 solid 5px;
 }
+
 
 .infoProductos {
     flex-direction: column;
@@ -515,20 +517,20 @@ footer {
 .mainContactos{
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 80%;
-    margin: 0% auto;
+ 
 }
 
-
 .titleContactos {
-    background-image: url(../background/nav.jpg);
-    background-size: cover;
-    font-weight: 800;
+    background-image: url(../img/fotoPortada.png);
+    background-position: 50%;
+    background-size:cover;
+    padding: 70px;
+    margin: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
     text-transform: uppercase;
-    font-size: xx-large;
-    height: 40vh;
-    justify-content: center;
-    align-items: center;
+    color: #FFFFFF;
+    justify-content: space-around;
     border-bottom: #948888 solid 5px;
 }
 
@@ -536,7 +538,6 @@ footer {
     font-size: x-large;
     padding: 30px;
     margin-left: 20px;
-    text-align: center;
 }
 
 .formContactos {
@@ -565,6 +566,10 @@ footer {
     margin: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.labelSi{
+    margin-left: 20px;
 }
 
 .imageContacto {
