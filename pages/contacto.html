@@ -15,7 +15,7 @@
 <body>
     <div class="grillaContactos flex">
         <header class="header flex">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
                 <div class="container-fluid">
                     <a href="../index.html"><img src="../img/logo.png" alt="logo" class="header__logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -105,15 +105,19 @@
 
                     <div class="formUno">
                         <input type="reset" value="Limpiar formulario" />
-                        <input type="button" value="Sin accion por default" />
+                        <input class="input" type="button" value="Sin accion por default" />
                     </div>
 
-                    <div class="formDos flex sino">
-                        <h4>¿Ya has adquirido alguna vez nuestros productos?</h4>
-                        <label class="labelSi" for="terminos">SI</label>
-                        <input type="radio" name="terminos" id="" value="SI" />
-                        <label class="labelSi" for="terminos">NO</label>
-                        <input type="radio" name="terminos" id="" value="NO" />
+                    <div class="form-check form-check-inline radio">
+                        <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault">
+                        <label class="form-check-label" for="inlineRadioDefault">He adquirido productos de
+                            Induspol.</label>
+                    </div>
+                    <div class="form-check form-check-inline radio">
+                        <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioChecked"
+                            checked="">
+                        <label class="form-check-label" for="inlineRadioChecked">NUNCA he adquirido productos de
+                            Induspol.</label>
                     </div>
 
                     <div class="col-12">
@@ -123,12 +127,10 @@
                                 Acepto suscribirme al newsletter
                             </label>
                         </div>
-                        <div class="formTres">
-                            <label for="opinion">Escribe aquí tu consuta</label>
-                            <textarea name="opinion" id="opinion" cols="30" rows="10"
-                                placeholder="Escribe aquí su comentario">
-                            </textarea>
-                            <input type="submit" value="Enviar comentario" />
+                        <div class="form-floating textarea">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea">Escriba aquí su consulta</label>
                         </div>
 
                     </div>
@@ -148,7 +150,7 @@
 
             <div class="mapRedes">
                 <div class="map">
-                    <h3 class="mapTitle">Visitanos personalmente:</h3>
+                    <h3 class="mapTitle">Visitanos personalmente</h3>
                     <p>Provincias Unidas 1381 (Rosario, Pcia. Santa Fe, Argentina)</p>
                     <p>Días y horarios de atención:
 
@@ -162,10 +164,10 @@
                 <div class="redes">
                     <h3 class="mapTitle">Seguinos en nuestras redes</h3>
                     <a href="https://www.facebook.com/induspolrosario" target="blank">
-                        <img class="redes__logo" src="../Icons/face.jpg" alt="facebook induspol" />
+                        <img class="redes__logo" src="../Icons/face.png" alt="facebook induspol" />
                     </a>
                     <a href="https://www.instagram.com/induspolsrl/" target="blank">
-                        <img class="redes__logo" src="../Icons/insta.jpg" alt="instagram induspol" />
+                        <img class="redes__logo" src="../Icons/insta.png" alt="instagram induspol" />
                     </a>
                 </div>
             </div>

@@ -39,7 +39,7 @@ footer {
 
 /*....................BUTTONS...........................*/
 
-.btn {
+.boton {
     width: 180px;
     padding: 20px;
     background-color: #ba181b;
@@ -49,7 +49,7 @@ footer {
     margin: 40px;
 }
 
-.btn a {
+.boton a {
     color: #E4E3E3;
     text-transform: uppercase;
     cursor: pointer;
@@ -57,7 +57,7 @@ footer {
     text-decoration: none;
 }
 
-.btn:hover {
+.boton:hover {
     background-color: #000000;
     transition: all .6s;
 }
@@ -91,7 +91,7 @@ img {
 }
 
 .header__logo {
-    width: 80px;
+    width: 100px;
     height: auto;
     margin-left: 7%;
     margin: 15px;
@@ -100,7 +100,6 @@ img {
 
 li a {
     color: #FFFFFF;
-    text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
     margin: 25px;
@@ -182,7 +181,6 @@ footer {
 }
 
 .mapGoogle{
-
     margin-left: 40px;
     margin: auto 0%;
 }
@@ -199,7 +197,7 @@ footer {
 
 .redes__logo {
     margin: 20px;
-    height: 30px;
+    height: 50px;
 }
 
 .section__anchors {
@@ -223,13 +221,14 @@ footer {
 
 .footerInfo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: #FFFFFF;
     border-top: 4px solid rgb(119, 136, 153);
     text-align: left;
     padding-top: 10px;
     background-color: #161A1D;
     font-weight: 200;
+    align-items: center;
 }
 
 /*....................PAGES: GALERIA....................*/
@@ -501,7 +500,6 @@ footer {
 .mainContactos{
     flex-direction: column;
     flex-wrap: wrap;
- 
 }
 
 .titleContactos {
@@ -524,7 +522,6 @@ footer {
     margin-left: 25px;
 }
 
-
 .formTres {
     padding: 30px;
     margin: 20px;
@@ -541,9 +538,21 @@ footer {
     justify-content: center;
 }
 
+.radio{
+    margin-left: 10px;
+}
+
+.input{
+    margin-left: 30px;
+}
+
 div .col-12{
+    margin-bottom: 50px;
     justify-content: center;
-    margin-bottom: 20px;
+}
+
+.textarea{
+    margin: 40px;
 }
 /*................MEDIAS QUERIES.........................*/
 
