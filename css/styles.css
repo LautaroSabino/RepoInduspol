@@ -285,10 +285,8 @@ footer {
 }
 
 .chico {
-    width: 40vh;
-    border: #948888 solid 2px;
     margin: 20px;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 
 /*....................PAGES: EMPRESA....................*/
