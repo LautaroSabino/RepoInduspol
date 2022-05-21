@@ -378,6 +378,7 @@ footer {
     padding: 30px;
     border: #948888 solid 2px;
 }
+
 /*....................PAGES: PRODUCTOS....................*/
 
 .grillaProductos {
@@ -533,6 +534,7 @@ div .col-12{
 .textarea{
     margin: 40px;
 }
+
 /*................MEDIAS QUERIES.........................*/
 
 @media screen and (min-width:768px) {
