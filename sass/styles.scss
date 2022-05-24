@@ -6,9 +6,10 @@
     text-decoration: none;
 }
 
+@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,500&display=swap');
 
-/*...................INDEX........................*/
+/*...................ESTRUCTURA........................*/
 
 .grilla {
     display: grid;
@@ -41,36 +42,8 @@ footer {
     flex-direction: column;
 }
 
-
-/*....................BUTTONS...........................*/
-
-.boton {
-    width: 180px;
-    padding: 20px;
-    background-color: #ba181b;
-    box-shadow: 5px 5px 10px;
-    margin: 1em;
-    text-align: center;
-    margin: 40px;
-
-    a {
-        color: #E4E3E3;
-        text-transform: uppercase;
-        cursor: pointer;
-        border-radius: 5px;
-        text-decoration: none;
-    }
-}
-
-.boton:hover {
-    background-color: #000000;
-    transition: all .6s;
-}
-
-/*....................BDOY IN GENERAL....................*/
-
 body {
-    background-color: #E4E3E3;
+    background-color: $col-ter;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
@@ -86,26 +59,53 @@ img {
     display: flex;
 }
 
+
+/*....................BUTTONS...........................*/
+
+.boton {
+    width: 180px;
+    padding: 20px;
+    background-color: $col-pri;
+    box-shadow: 5px 5px 10px;
+    margin: 1em;
+    text-align: center;
+    margin: 40px;
+
+    a {
+        color: $col-ter;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}
+
+.boton:hover {
+    background-color: $col-sec;
+    transition: all .6s;
+}
+
+
 /*.........................HEADER...........................*/
 
 .header {
-    border-bottom: 4px solid lightslategrey;
+    border-bottom: 4px solid $col-cua;
     justify-content: space-evenly;
-    background-color: #161A1D;
+    background-color: $col-sec;
 }
 
 .header__logo {
     width: 100px;
     height: auto;
     margin-left: 7%;
-    margin: 15px;
+    margin: 5px;
 }
 
 li a {
-    color: #FFFFFF;
+    color: $col-ter;
     text-transform: uppercase;
     padding: 10px;
-    margin: 25px;
+    margin: 10px;
 }
 
 /* ...............MAIN.................... */
@@ -113,9 +113,8 @@ li a {
 .mainIndex {
     background-image: url(../img/fotoPortada.png);
     background-size: cover;
-    padding: 20px;
-    border-bottom: #948888 solid 4px;
-    margin: auto 30px;
+    padding: 10px;
+    border-bottom: $col-cua solid 4px;
 }
 
 .titleCoverpage {
@@ -132,7 +131,7 @@ li a {
 .title {
     white-space: pre-line;
     text-align: center;
-    color: #FFFFFF;
+    color: $col-ter;
     margin-top: 50px;
     font-weight: 400;
 
@@ -144,7 +143,7 @@ li a {
     margin: 40px;
     text-transform: lowercase;
     font-weight: 200;
-    color: #FFFFFF;
+    color: $col-ter;
 }
 
 
@@ -164,19 +163,19 @@ footer {
 
 .mapTitle {
     padding-bottom: 20px;
-    color: #ba181b;
+    color: $col-pri;
 }
 
 .redtitle {
-    color: #ba181b;
+    color: $col-pri;
 }
 
 .map {
     padding: 40px;
     text-align: center;
-    background-color: #ddc591;
+    background-color: $col-qui;
     border-radius: 10px;
-    border: solid 2px #e5383b;
+    border: solid 2px $col-pri;
     display: flex;
     flex-direction: column;
     white-space: pre-line;
@@ -208,13 +207,13 @@ footer {
     margin-bottom: 15px;
     text-align: center;
     flex-wrap: wrap;
-    background-color: #a4161a;
-    border-top: 4px solid rgb(81, 92, 103);
+    background-color: $col-pri;
+    border-top: 4px solid $col-cua;
 }
 
 .footer__link {
     text-decoration: none;
-    color: #FFFFFF;
+    color: $col-ter;
     padding: 30px;
     margin: 40px;
 }
@@ -223,11 +222,11 @@ footer {
 .footerInfo {
     display: flex;
     justify-content: space-around;
-    color: #FFFFFF;
-    border-top: 4px solid rgb(119, 136, 153);
+    color: $col-ter;
+    border-top: 4px solid $col-cua;
     text-align: left;
     padding-top: 10px;
-    background-color: #161A1D;
+    background-color: $col-sec;
     font-weight: 200;
     align-items: center;
 }

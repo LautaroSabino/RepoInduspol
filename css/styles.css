@@ -6,7 +6,7 @@
   list-style: none;
   text-decoration: none; }
 
-/*...................INDEX........................*/
+/*...................ESTRUCTURA........................*/
 .grilla {
   display: grid;
   grid-template-areas: "header header" "main main" "footer footer" "footer footer";
@@ -28,6 +28,20 @@ footer {
 .grilla {
   flex-direction: column; }
 
+body {
+  background-color: #E4E3E3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+  object-fit: cover; }
+
+.flex {
+  display: flex; }
+
 /*....................BUTTONS...........................*/
 .boton {
   width: 180px;
@@ -45,23 +59,8 @@ footer {
     text-decoration: none; }
 
 .boton:hover {
-  background-color: #000000;
+  background-color: #161A1D;
   transition: all .6s; }
-
-/*....................BDOY IN GENERAL....................*/
-body {
-  background-color: #E4E3E3;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px; }
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 16px;
-  object-fit: cover; }
-
-.flex {
-  display: flex; }
 
 /*.........................HEADER...........................*/
 .header {
@@ -73,21 +72,20 @@ img {
   width: 100px;
   height: auto;
   margin-left: 7%;
-  margin: 15px; }
+  margin: 5px; }
 
 li a {
-  color: #FFFFFF;
+  color: #E4E3E3;
   text-transform: uppercase;
   padding: 10px;
-  margin: 25px; }
+  margin: 10px; }
 
 /* ...............MAIN.................... */
 .mainIndex {
   background-image: url(../img/fotoPortada.png);
   background-size: cover;
-  padding: 20px;
-  border-bottom: #948888 solid 4px;
-  margin: auto 30px; }
+  padding: 10px;
+  border-bottom: lightslategrey solid 4px; }
 
 .titleCoverpage {
   flex-direction: column;
@@ -101,7 +99,7 @@ li a {
 .title {
   white-space: pre-line;
   text-align: center;
-  color: #FFFFFF;
+  color: #E4E3E3;
   margin-top: 50px;
   font-weight: 400; }
 
@@ -111,7 +109,7 @@ li a {
   margin: 40px;
   text-transform: lowercase;
   font-weight: 200;
-  color: #FFFFFF; }
+  color: #E4E3E3; }
 
 /* ....................FOOTER.................... */
 footer {
@@ -135,7 +133,7 @@ footer {
   text-align: center;
   background-color: #ddc591;
   border-radius: 10px;
-  border: solid 2px #e5383b;
+  border: solid 2px #ba181b;
   display: flex;
   flex-direction: column;
   white-space: pre-line; }
@@ -163,20 +161,20 @@ footer {
   margin-bottom: 15px;
   text-align: center;
   flex-wrap: wrap;
-  background-color: #a4161a;
-  border-top: 4px solid #515c67; }
+  background-color: #ba181b;
+  border-top: 4px solid lightslategrey; }
 
 .footer__link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #E4E3E3;
   padding: 30px;
   margin: 40px; }
 
 .footerInfo {
   display: flex;
   justify-content: space-around;
-  color: #FFFFFF;
-  border-top: 4px solid lightslategray;
+  color: #E4E3E3;
+  border-top: 4px solid lightslategrey;
   text-align: left;
   padding-top: 10px;
   background-color: #161A1D;
