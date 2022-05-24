@@ -10,7 +10,7 @@
 
 /*...................INDEX........................*/
 
-.grillaIndex {
+.grilla {
     display: grid;
     grid-template-areas: "header header"
         "main main"
@@ -36,6 +36,12 @@ footer {
     grid-area: footer;
 }
 
+
+.grilla {
+    flex-direction: column;
+}
+
+
 /*....................BUTTONS...........................*/
 
 .boton {
@@ -46,12 +52,14 @@ footer {
     margin: 1em;
     text-align: center;
     margin: 40px;
+
     a {
         color: #E4E3E3;
         text-transform: uppercase;
         cursor: pointer;
         border-radius: 5px;
-        text-decoration: none;}
+        text-decoration: none;
+    }
 }
 
 .boton:hover {
@@ -115,16 +123,16 @@ li a {
     justify-content: center;
 }
 
-.mainTitle{
+.mainTitle {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     margin: 0% auto;
 }
 
 .title {
     white-space: pre-line;
     text-align: center;
-    color:#FFFFFF;
+    color: #FFFFFF;
     margin-top: 50px;
     font-weight: 400;
 
@@ -136,7 +144,7 @@ li a {
     margin: 40px;
     text-transform: lowercase;
     font-weight: 200;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 
@@ -174,7 +182,7 @@ footer {
     white-space: pre-line;
 }
 
-.mapGoogle{
+.mapGoogle {
     margin-left: 40px;
     margin: auto 0%;
 }
@@ -224,101 +232,15 @@ footer {
     align-items: center;
 }
 
-/*....................PAGES: GALERIA....................*/
 
-.grillaGaleria {
-    display: grid;
-    grid-template-areas: "header header"
-        "main main"
-        "main main"
-        "main main"
-        "footer footer"
-        "footer footer";
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat (6, 5fr);
-    column-gap: 15px;
-    row-gap: 15px;
-}
 
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.mainGaleria{
-    flex-wrap: wrap;
-}
-
-.titleGaleria {
-    background-image: url(../img/fotoPortada.png);
-    background-position: 50%;
-    background-size:cover;
-    padding: 70px;
-    margin: auto 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    justify-content: space-around;
-    border-bottom: #948888 solid 5px;
-}
-
-.redtitle {
-    color: #D9322B;
-    padding: 10px;
-    text-align: center;
-    font-weight: 500;
-}
-
-.chico {
-    margin: 20px;
-    margin-top: 10px;
-}
 
 /*....................PAGES: EMPRESA....................*/
-
-.grillaEmpresa {
-    display: grid;
-    grid-template-areas: "header header"
-        "main main"
-        "main main"
-        "main main"
-        "footer footer"
-        "footer footer";
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat (6, 5fr);
-    column-gap: 15px;
-    row-gap: 15px;
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.grillaEmpresa {
-    flex-direction: column;
-}
 
 .titleEmpresa {
     background-image: url(../img/fotoPortada.png);
     background-position: 50%;
-    background-size:cover;
+    background-size: cover;
     padding: 70px;
     margin: 30px;
     margin-bottom: 30px;
@@ -365,7 +287,7 @@ footer {
     align-items: center;
 }
 
-.empresa3{
+.empresa3 {
     justify-content: space-evenly;
     max-width: 100%;
     margin: 15px;
@@ -375,37 +297,9 @@ footer {
 
 /*....................PAGES: PRODUCTOS....................*/
 
-.grillaProductos {
-    display: grid;
-    grid-template-areas: "header header"
-        "main main"
-        "main main"
-        "main main"
-        "footer footer"
-        "footer footer";
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat (6, 5fr);
-    column-gap: 15px;
-    row-gap: 15px;
-}
 
-header {
-    grid-area: header;
-}
 
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.grillaProductos {
-    flex-direction: column;
-}
-
-.mainProductos{
+.mainProductos {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0% auto;
@@ -414,7 +308,7 @@ footer {
 .titleProductos {
     background-image: url(../img/fotoPortada.png);
     background-position: 50%;
-    background-size:cover;
+    background-size: cover;
     padding: 70px;
     margin: 30px;
     margin-bottom: 30px;
@@ -431,7 +325,7 @@ footer {
 
 }
 
-.carrusel{
+.carrusel {
     max-width: 500px;
     margin: 0% auto;
     margin-bottom: 30px;
@@ -441,37 +335,7 @@ footer {
 
 /*....................PAGES: CONTACTOS....................*/
 
-.grillaContactos {
-    display: grid;
-    grid-template-areas: "header header"
-        "main main"
-        "main main"
-        "main main"
-        "footer footer"
-        "footer footer";
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat (6, 5fr);
-    column-gap: 15px;
-    row-gap: 15px;
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.grillaContactos {
-    flex-direction: column;
-}
-
-.mainContactos{
+.mainContactos {
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -479,7 +343,7 @@ footer {
 .titleContactos {
     background-image: url(../img/fotoPortada.png);
     background-position: 50%;
-    background-size:cover;
+    background-size: cover;
     padding: 70px;
     margin: 30px;
     margin-bottom: 30px;
@@ -503,7 +367,7 @@ footer {
     flex-direction: column;
 }
 
-.labelSi{
+.labelSi {
     margin-left: 20px;
 }
 
@@ -512,65 +376,37 @@ footer {
     justify-content: center;
 }
 
-.radio{
+.radio {
     margin-left: 10px;
 }
 
-.input{
+.input {
     margin-left: 30px;
 }
 
-div .col-12{
+div .col-12 {
     margin-bottom: 50px;
     justify-content: center;
 }
 
-.textarea{
+.textarea {
     margin: 40px;
 }
 
 
 /*................MEDIAS QUERIES.........................*/
 
-@media screen and (min-width:768px) {
-    .grillaGaleria {
-        display: grid;
-        grid-template-areas: "header header header"
-            "main main main"
-            "main main main"
-            "main main main"
-            "footer footer footer"
-            "footer footer footer";
-        grid-template-columns: repeat(3, 2fr);
-        grid-template-rows: repeat (6, 5fr);
-        column-gap: 15px;
-        row-gap: 15px;
-    }
-
-    header {
-        grid-area: header;
-    }
-    
-    main {
-        grid-area: main;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-}
-
 
 @media screen and (min-width:768px) {
-    *main{
+    *main {
         width: 95%;
     }
 
-    .mainIndex{
+    .mainIndex {
         width: 95%;
     }
 
-    .titleCoverpage{
+    .titleCoverpage {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -579,3 +415,33 @@ div .col-12{
 }
 
 
+.mainGaleria{
+    flex-wrap: wrap;
+}
+
+.titleGaleria {
+    background-image: url(../img/fotoPortada.png);
+    background-position: 50%;
+    background-size:cover;
+    padding: 70px;
+    margin: auto 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: space-around;
+    border-bottom: #948888 solid 5px;
+}
+
+.redtitle {
+    color: #D9322B;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.chico {
+    margin: 20px;
+    margin-top: 10px;
+}
