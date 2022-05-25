@@ -6,8 +6,11 @@
     text-decoration: none;
 }
 
+
+@import "pages";
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,500&display=swap');
+
 
 /*...................ESTRUCTURA........................*/
 
@@ -30,13 +33,12 @@ header {
 
 main {
     grid-area: main;
+    flex-wrap: wrap;
 }
-
 
 footer {
     grid-area: footer;
 }
-
 
 .grilla {
     flex-direction: column;
@@ -58,7 +60,6 @@ img {
 .flex {
     display: flex;
 }
-
 
 /*....................BUTTONS...........................*/
 
@@ -85,28 +86,34 @@ img {
     transition: all .6s;
 }
 
-
 /*.........................HEADER...........................*/
 
 .header {
     border-bottom: 4px solid $col-cua;
     justify-content: space-evenly;
     background-color: $col-sec;
+
+    
+    .header__logo {
+        width: 100px;
+        height: auto;
+        margin-left: 7%;
+        margin: 5px;
+    }
+
+    li a {
+        color: $col-ter;
+        text-transform: uppercase;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .formNav{
+        padding: 30px;
+        margin: 10px;
+    }
 }
 
-.header__logo {
-    width: 100px;
-    height: auto;
-    margin-left: 7%;
-    margin: 5px;
-}
-
-li a {
-    color: $col-ter;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 10px;
-}
 
 /* ...............MAIN.................... */
 
@@ -115,35 +122,36 @@ li a {
     background-size: cover;
     padding: 10px;
     border-bottom: $col-cua solid 4px;
-}
+    
+    .titleCoverpage {
+        flex-direction: column;
+        justify-content: center;
 
-.titleCoverpage {
-    flex-direction: column;
-    justify-content: center;
-}
-
-.mainTitle {
-    flex-direction: column;
-    align-items: center;
-    margin: 0% auto;
-}
-
-.title {
-    white-space: pre-line;
-    text-align: center;
-    color: $col-ter;
-    margin-top: 50px;
-    font-weight: 400;
-
-}
-
-.subtitle {
-    margin-top: 10px;
-    text-align: center;
-    margin: 40px;
-    text-transform: lowercase;
-    font-weight: 200;
-    color: $col-ter;
+        .mainTitle {
+            flex-direction: column;
+            align-items: center;
+            margin: 0% auto;
+            
+            .title {
+                white-space: pre-line;
+                text-align: center;
+                color: $col-ter;
+                margin-top: 50px;
+                font-weight: 400;
+            
+            }
+            
+            .subtitle {
+                margin-top: 10px;
+                text-align: center;
+                margin: 40px;
+                text-transform: lowercase;
+                font-weight: 200;
+                color: $col-ter;
+            }
+        }
+    }
+    
 }
 
 
@@ -152,147 +160,95 @@ li a {
 footer {
     padding: 10px;
     margin: 5px;
-}
+    
+    .mapRedes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        
+        .map {
+            padding: 40px;
+            text-align: center;
+            background-color: $col-qui;
+            border-radius: 10px;
+            border: solid 2px $col-pri;
+            display: flex;
+            flex-direction: column;
+            white-space: pre-line;
 
-.mapRedes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+            .mapGoogle {
+                margin-left: 40px;
+                margin: auto 0%;
+            }
+        }
+        
+        .redes {
+            flex-wrap: wrap;
+            width: 30rem;
+            padding: 30px;
+            text-align: center;
+            margin-top: 0%;
+            margin: auto 0%;
+            margin-bottom: 10px;
+        }
+        
+    }
 
-}
+    .section__anchors {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+        flex-wrap: wrap;
+        background-color: $col-pri;
+        border-top: 4px solid $col-cua;
+        
+    }
 
-.mapTitle {
-    padding-bottom: 20px;
-    color: $col-pri;
-}
+    .footerInfo {
+        display: flex;
+        justify-content: space-around;
+        color: $col-ter;
+        border-top: 4px solid $col-cua;
+        text-align: left;
+        padding-top: 10px;
+        background-color: $col-sec;
+        font-weight: 200;
+        align-items: center;
+    }
 
-.redtitle {
-    color: $col-pri;
-}
-
-.map {
-    padding: 40px;
-    text-align: center;
-    background-color: $col-qui;
-    border-radius: 10px;
-    border: solid 2px $col-pri;
-    display: flex;
-    flex-direction: column;
-    white-space: pre-line;
-}
-
-.mapGoogle {
-    margin-left: 40px;
-    margin: auto 0%;
-}
-
-.redes {
-    flex-wrap: wrap;
-    width: 30rem;
-    padding: 30px;
-    text-align: center;
-    margin-top: 0%;
-    margin: auto 0%;
-    margin-bottom: 10px;
-}
-
-.redes__logo {
-    margin: 20px;
-    height: 30px;
-}
-
-.section__anchors {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-    flex-wrap: wrap;
-    background-color: $col-pri;
-    border-top: 4px solid $col-cua;
-}
-
-.footer__link {
-    text-decoration: none;
-    color: $col-ter;
-    padding: 30px;
-    margin: 40px;
-}
-
-
-.footerInfo {
-    display: flex;
-    justify-content: space-around;
-    color: $col-ter;
-    border-top: 4px solid $col-cua;
-    text-align: left;
-    padding-top: 10px;
-    background-color: $col-sec;
-    font-weight: 200;
-    align-items: center;
-}
-
-
-
-
-/*....................PAGES: EMPRESA....................*/
-
-.titleEmpresa {
-    background-image: url(../img/fotoPortada.png);
-    background-position: 50%;
-    background-size: cover;
-    padding: 70px;
-    margin: 30px;
-    margin-bottom: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    justify-content: space-around;
-    border-bottom: #948888 solid 5px;
-}
-
-.infoEmpresa {
-    flex-direction: column;
-}
-
-.title_empresa {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: xx-large;
-    margin-left: 40px;
-}
-
-.parrafo_empresa {
-    margin: 10px;
-    padding: 10px;
-    font-weight: 500;
-    line-height: 26px;
-}
-
-.fotoempresa {
-    border: 5px solid #948888;
-    margin-left: 20px;
+    .footer__link {
+        text-decoration: none;
+        color: $col-ter;
+        padding: 30px;
+        margin: 40px;
+    }
+    
+    
+    .mapTitle {
+        padding-bottom: 20px;
+        color: $col-pri;
+        
+    }
+    .redtitle {
+        color: $col-pri;
+    }
+    
+    .redes__logo {
+        margin: 20px;
+        height: 30px;
+    }
+    
+    .footerLogo {
+        width: 100px;
+        height: auto;
+        margin-left: 7%;
+        margin: 5px;
+    }
 }
 
 
-.empresa {
-    padding: 10vh;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.empresa2 {
-    padding: 10vh;
-    flex-direction: column;
-    align-items: center;
-}
-
-.empresa3 {
-    justify-content: space-evenly;
-    max-width: 100%;
-    margin: 15px;
-    padding: 30px;
-    border: #948888 solid 2px;
-}
 
 /*....................PAGES: PRODUCTOS....................*/
 
@@ -413,34 +369,3 @@ div .col-12 {
 
 }
 
-
-.mainGaleria{
-    flex-wrap: wrap;
-}
-
-.titleGaleria {
-    background-image: url(../img/fotoPortada.png);
-    background-position: 50%;
-    background-size:cover;
-    padding: 70px;
-    margin: auto 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    justify-content: space-around;
-    border-bottom: #948888 solid 5px;
-}
-
-.redtitle {
-    color: #D9322B;
-    padding: 10px;
-    text-align: center;
-    font-weight: 500;
-}
-
-.chico {
-    margin: 20px;
-    margin-top: 10px;
-}

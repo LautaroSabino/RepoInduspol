@@ -1,0 +1,83 @@
+@import "variables";
+
+.titlepages {
+    background-image: url(../img/fotoPortada.png);
+    background-position: 50%;
+    background-size:cover;
+    padding: 70px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $col-ter;
+    justify-content: space-around;
+    border-bottom: $col-cua solid 5px;
+}
+
+.redtitle {
+    color: $col-pri;
+}
+
+/*....................PAGES: GALERIA....................*/
+
+.chico {
+    margin: 10px;
+    margin-top: 10px;
+}
+
+div .carta{
+    justify-content: space-around;
+    align-items: center;
+
+    .carta{
+        margin: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+/*....................PAGES: EMPRESA....................*/
+
+
+.infoEmpresa {
+    flex-direction: column;
+}
+
+.title_empresa {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: xx-large;
+    margin-left: 40px;
+}
+
+.parrafo_empresa {
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.fotoempresa {
+    border: 5px solid #948888;
+    margin-left: 20px;
+}
+
+
+.empresa {
+    padding: 10vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.empresa2 {
+    padding: 10vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empresa3 {
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 15px;
+    padding: 30px;
+    border: #948888 solid 2px;
+}

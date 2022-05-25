@@ -6,6 +6,71 @@
   list-style: none;
   text-decoration: none; }
 
+.titlepages {
+  background-image: url(../img/fotoPortada.png);
+  background-position: 50%;
+  background-size: cover;
+  padding: 70px;
+  margin-bottom: 30px;
+  width: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #E4E3E3;
+  justify-content: space-around;
+  border-bottom: #8697a7 solid 5px; }
+
+.redtitle {
+  color: #ba181b; }
+
+/*....................PAGES: GALERIA....................*/
+.chico {
+  margin: 10px;
+  margin-top: 10px; }
+
+div .carta {
+  justify-content: space-around;
+  align-items: center; }
+  div .carta .carta {
+    margin: 20px;
+    margin-bottom: 15px; }
+
+/*....................PAGES: EMPRESA....................*/
+.infoEmpresa {
+  flex-direction: column; }
+
+.title_empresa {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: xx-large;
+  margin-left: 40px; }
+
+.parrafo_empresa {
+  margin: 10px;
+  padding: 10px;
+  font-weight: 500;
+  line-height: 26px; }
+
+.fotoempresa {
+  border: 5px solid #948888;
+  margin-left: 20px; }
+
+.empresa {
+  padding: 10vh;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.empresa2 {
+  padding: 10vh;
+  flex-direction: column;
+  align-items: center; }
+
+.empresa3 {
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin: 15px;
+  padding: 30px;
+  border: #948888 solid 2px; }
+
 /*...................ESTRUCTURA........................*/
 .grilla {
   display: grid;
@@ -20,7 +85,8 @@ header {
   grid-area: header; }
 
 main {
-  grid-area: main; }
+  grid-area: main;
+  flex-wrap: wrap; }
 
 footer {
   grid-area: footer; }
@@ -64,172 +130,114 @@ img {
 
 /*.........................HEADER...........................*/
 .header {
-  border-bottom: 4px solid lightslategrey;
+  border-bottom: 4px solid #8697a7;
   justify-content: space-evenly;
   background-color: #161A1D; }
-
-.header__logo {
-  width: 100px;
-  height: auto;
-  margin-left: 7%;
-  margin: 5px; }
-
-li a {
-  color: #E4E3E3;
-  text-transform: uppercase;
-  padding: 10px;
-  margin: 10px; }
+  .header .header__logo {
+    width: 100px;
+    height: auto;
+    margin-left: 7%;
+    margin: 5px; }
+  .header li a {
+    color: #E4E3E3;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 15px; }
+  .header .formNav {
+    padding: 30px;
+    margin: 10px; }
 
 /* ...............MAIN.................... */
 .mainIndex {
   background-image: url(../img/fotoPortada.png);
   background-size: cover;
   padding: 10px;
-  border-bottom: lightslategrey solid 4px; }
-
-.titleCoverpage {
-  flex-direction: column;
-  justify-content: center; }
-
-.mainTitle {
-  flex-direction: column;
-  align-items: center;
-  margin: 0% auto; }
-
-.title {
-  white-space: pre-line;
-  text-align: center;
-  color: #E4E3E3;
-  margin-top: 50px;
-  font-weight: 400; }
-
-.subtitle {
-  margin-top: 10px;
-  text-align: center;
-  margin: 40px;
-  text-transform: lowercase;
-  font-weight: 200;
-  color: #E4E3E3; }
+  border-bottom: #8697a7 solid 4px; }
+  .mainIndex .titleCoverpage {
+    flex-direction: column;
+    justify-content: center; }
+    .mainIndex .titleCoverpage .mainTitle {
+      flex-direction: column;
+      align-items: center;
+      margin: 0% auto; }
+      .mainIndex .titleCoverpage .mainTitle .title {
+        white-space: pre-line;
+        text-align: center;
+        color: #E4E3E3;
+        margin-top: 50px;
+        font-weight: 400; }
+      .mainIndex .titleCoverpage .mainTitle .subtitle {
+        margin-top: 10px;
+        text-align: center;
+        margin: 40px;
+        text-transform: lowercase;
+        font-weight: 200;
+        color: #E4E3E3; }
 
 /* ....................FOOTER.................... */
 footer {
   padding: 10px;
   margin: 5px; }
-
-.mapRedes {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.mapTitle {
-  padding-bottom: 20px;
-  color: #ba181b; }
-
-.redtitle {
-  color: #ba181b; }
-
-.map {
-  padding: 40px;
-  text-align: center;
-  background-color: #ddc591;
-  border-radius: 10px;
-  border: solid 2px #ba181b;
-  display: flex;
-  flex-direction: column;
-  white-space: pre-line; }
-
-.mapGoogle {
-  margin-left: 40px;
-  margin: auto 0%; }
-
-.redes {
-  flex-wrap: wrap;
-  width: 30rem;
-  padding: 30px;
-  text-align: center;
-  margin-top: 0%;
-  margin: auto 0%;
-  margin-bottom: 10px; }
-
-.redes__logo {
-  margin: 20px;
-  height: 30px; }
-
-.section__anchors {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  text-align: center;
-  flex-wrap: wrap;
-  background-color: #ba181b;
-  border-top: 4px solid lightslategrey; }
-
-.footer__link {
-  text-decoration: none;
-  color: #E4E3E3;
-  padding: 30px;
-  margin: 40px; }
-
-.footerInfo {
-  display: flex;
-  justify-content: space-around;
-  color: #E4E3E3;
-  border-top: 4px solid lightslategrey;
-  text-align: left;
-  padding-top: 10px;
-  background-color: #161A1D;
-  font-weight: 200;
-  align-items: center; }
-
-/*....................PAGES: EMPRESA....................*/
-.titleEmpresa {
-  background-image: url(../img/fotoPortada.png);
-  background-position: 50%;
-  background-size: cover;
-  padding: 70px;
-  margin: 30px;
-  margin-bottom: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  justify-content: space-around;
-  border-bottom: #948888 solid 5px; }
-
-.infoEmpresa {
-  flex-direction: column; }
-
-.title_empresa {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: xx-large;
-  margin-left: 40px; }
-
-.parrafo_empresa {
-  margin: 10px;
-  padding: 10px;
-  font-weight: 500;
-  line-height: 26px; }
-
-.fotoempresa {
-  border: 5px solid #948888;
-  margin-left: 20px; }
-
-.empresa {
-  padding: 10vh;
-  flex-direction: column;
-  flex-wrap: wrap; }
-
-.empresa2 {
-  padding: 10vh;
-  flex-direction: column;
-  align-items: center; }
-
-.empresa3 {
-  justify-content: space-evenly;
-  max-width: 100%;
-  margin: 15px;
-  padding: 30px;
-  border: #948888 solid 2px; }
+  footer .mapRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .mapRedes .map {
+      padding: 40px;
+      text-align: center;
+      background-color: #ddc591;
+      border-radius: 10px;
+      border: solid 2px #ba181b;
+      display: flex;
+      flex-direction: column;
+      white-space: pre-line; }
+      footer .mapRedes .map .mapGoogle {
+        margin-left: 40px;
+        margin: auto 0%; }
+    footer .mapRedes .redes {
+      flex-wrap: wrap;
+      width: 30rem;
+      padding: 30px;
+      text-align: center;
+      margin-top: 0%;
+      margin: auto 0%;
+      margin-bottom: 10px; }
+  footer .section__anchors {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #ba181b;
+    border-top: 4px solid #8697a7; }
+  footer .footerInfo {
+    display: flex;
+    justify-content: space-around;
+    color: #E4E3E3;
+    border-top: 4px solid #8697a7;
+    text-align: left;
+    padding-top: 10px;
+    background-color: #161A1D;
+    font-weight: 200;
+    align-items: center; }
+  footer .footer__link {
+    text-decoration: none;
+    color: #E4E3E3;
+    padding: 30px;
+    margin: 40px; }
+  footer .mapTitle {
+    padding-bottom: 20px;
+    color: #ba181b; }
+  footer .redtitle {
+    color: #ba181b; }
+  footer .redes__logo {
+    margin: 20px;
+    height: 30px; }
+  footer .footerLogo {
+    width: 100px;
+    height: auto;
+    margin-left: 7%;
+    margin: 5px; }
 
 /*....................PAGES: PRODUCTOS....................*/
 .mainProductos {
@@ -318,30 +326,3 @@ div .col-12 {
     display: flex;
     flex-direction: row;
     justify-content: space-around; } }
-
-.mainGaleria {
-  flex-wrap: wrap; }
-
-.titleGaleria {
-  background-image: url(../img/fotoPortada.png);
-  background-position: 50%;
-  background-size: cover;
-  padding: 70px;
-  margin: auto 30px;
-  margin-bottom: 30px;
-  width: 100%;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  justify-content: space-around;
-  border-bottom: #948888 solid 5px; }
-
-.redtitle {
-  color: #D9322B;
-  padding: 10px;
-  text-align: center;
-  font-weight: 500; }
-
-.chico {
-  margin: 20px;
-  margin-top: 10px; }
