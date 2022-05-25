@@ -5,6 +5,7 @@
     background-position: 50%;
     background-size:cover;
     padding: 70px;
+    margin-top: 0%;
     margin-bottom: 30px;
     width: 100%;
     font-weight: 400;
@@ -22,7 +23,7 @@
 
 .chico {
     margin: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 div .carta{
@@ -40,44 +41,108 @@ div .carta{
 
 .infoEmpresa {
     flex-direction: column;
+    
+    .empresa {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .portadaEmpresa{
+            justify-content: space-around;
+            align-items: center;
+
+            .title_empresa {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: xx-large;
+                margin-left: 40px;
+            }
+        }
+
+        .parrafo_empresa {
+            margin: 10px;
+            padding: 10px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+        
+        .fotoempresa {
+            border: 5px solid $col-cua;
+            margin-left: 20px;
+            max-width: 300px;
+            max-height: auto;
+        }
+        
+        .empresaEsquema {
+            flex-direction: column;
+            margin: 15px;
+            padding: 20px;
+            border: $col-cua solid 2px;
+        }
+    }
+    
+
+    
+    
+
 }
 
-.title_empresa {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: xx-large;
-    margin-left: 40px;
-}
 
-.parrafo_empresa {
-    margin: 10px;
-    padding: 10px;
-    font-weight: 500;
-    line-height: 26px;
-}
+/*....................PAGES: PRODUCTOS....................*/
 
-.fotoempresa {
-    border: 5px solid #948888;
-    margin-left: 20px;
-}
-
-
-.empresa {
-    padding: 10vh;
+.infoProductos {
     flex-direction: column;
-    flex-wrap: wrap;
+
+    .carrusel {
+        max-width: 500px;
+        margin: 0% auto;
+        margin-bottom: 30px;
+        border: solid $col-sec 2px;
+        padding: 50px;
+    }
+
+    .parrafo_empresa {
+        margin: 10px;
+        padding: 10px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .parrafoEmpresa{
+        text-align: center;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
 }
 
-.empresa2 {
-    padding: 10vh;
-    flex-direction: column;
-    align-items: center;
-}
 
-.empresa3 {
-    justify-content: space-evenly;
-    max-width: 100%;
-    margin: 15px;
+/*....................PAGES: CONTACTOS....................*/
+
+.subtitleContactos {
+    font-size: x-large;
     padding: 30px;
-    border: #948888 solid 2px;
+    margin-left: 25px;
+}
+
+.footerForm {
+    justify-content: center;
+}
+
+.radio {
+    margin-left: 10px;
+}
+
+.input {
+    margin-left: 30px;
+}
+
+div .col-12 {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.textarea {
+    margin: 40px;
 }

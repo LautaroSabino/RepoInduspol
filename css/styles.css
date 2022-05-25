@@ -11,6 +11,7 @@
   background-position: 50%;
   background-size: cover;
   padding: 70px;
+  margin-top: 0%;
   margin-bottom: 30px;
   width: 100%;
   font-weight: 400;
@@ -25,7 +26,7 @@
 /*....................PAGES: GALERIA....................*/
 .chico {
   margin: 10px;
-  margin-top: 10px; }
+  margin-top: 5px; }
 
 div .carta {
   justify-content: space-around;
@@ -37,39 +38,75 @@ div .carta {
 /*....................PAGES: EMPRESA....................*/
 .infoEmpresa {
   flex-direction: column; }
+  .infoEmpresa .empresa {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    .infoEmpresa .empresa .portadaEmpresa {
+      justify-content: space-around;
+      align-items: center; }
+      .infoEmpresa .empresa .portadaEmpresa .title_empresa {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: xx-large;
+        margin-left: 40px; }
+    .infoEmpresa .empresa .parrafo_empresa {
+      margin: 10px;
+      padding: 10px;
+      font-weight: 500;
+      line-height: 26px; }
+    .infoEmpresa .empresa .fotoempresa {
+      border: 5px solid #8697a7;
+      margin-left: 20px;
+      max-width: 300px;
+      max-height: auto; }
+    .infoEmpresa .empresa .empresaEsquema {
+      flex-direction: column;
+      margin: 15px;
+      padding: 20px;
+      border: #8697a7 solid 2px; }
 
-.title_empresa {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: xx-large;
-  margin-left: 40px; }
+/*....................PAGES: PRODUCTOS....................*/
+.infoProductos {
+  flex-direction: column; }
+  .infoProductos .carrusel {
+    max-width: 500px;
+    margin: 0% auto;
+    margin-bottom: 30px;
+    border: solid #161A1D 2px;
+    padding: 50px; }
+  .infoProductos .parrafo_empresa {
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 26px; }
+  .infoProductos .parrafoEmpresa {
+    text-align: center;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px; }
 
-.parrafo_empresa {
-  margin: 10px;
-  padding: 10px;
-  font-weight: 500;
-  line-height: 26px; }
-
-.fotoempresa {
-  border: 5px solid #948888;
-  margin-left: 20px; }
-
-.empresa {
-  padding: 10vh;
-  flex-direction: column;
-  flex-wrap: wrap; }
-
-.empresa2 {
-  padding: 10vh;
-  flex-direction: column;
-  align-items: center; }
-
-.empresa3 {
-  justify-content: space-evenly;
-  max-width: 100%;
-  margin: 15px;
+/*....................PAGES: CONTACTOS....................*/
+.subtitleContactos {
+  font-size: x-large;
   padding: 30px;
-  border: #948888 solid 2px; }
+  margin-left: 25px; }
+
+.footerForm {
+  justify-content: center; }
+
+.radio {
+  margin-left: 10px; }
+
+.input {
+  margin-left: 30px; }
+
+div .col-12 {
+  margin-bottom: 50px;
+  justify-content: center; }
+
+.textarea {
+  margin: 40px; }
 
 /*...................ESTRUCTURA........................*/
 .grilla {
@@ -238,83 +275,6 @@ footer {
     height: auto;
     margin-left: 7%;
     margin: 5px; }
-
-/*....................PAGES: PRODUCTOS....................*/
-.mainProductos {
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0% auto; }
-
-.titleProductos {
-  background-image: url(../img/fotoPortada.png);
-  background-position: 50%;
-  background-size: cover;
-  padding: 70px;
-  margin: 30px;
-  margin-bottom: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  justify-content: space-around;
-  border-bottom: #948888 solid 5px; }
-
-.infoProductos {
-  flex-direction: column; }
-
-.carrusel {
-  max-width: 500px;
-  margin: 0% auto;
-  margin-bottom: 30px;
-  border: solid #161A1D 2px;
-  padding: 50px; }
-
-/*....................PAGES: CONTACTOS....................*/
-.mainContactos {
-  flex-direction: column;
-  flex-wrap: wrap; }
-
-.titleContactos {
-  background-image: url(../img/fotoPortada.png);
-  background-position: 50%;
-  background-size: cover;
-  padding: 70px;
-  margin: 30px;
-  margin-bottom: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  justify-content: space-around;
-  border-bottom: #948888 solid 5px; }
-
-.subtitleContactos {
-  font-size: x-large;
-  padding: 30px;
-  margin-left: 25px; }
-
-.formTres {
-  padding: 30px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column; }
-
-.labelSi {
-  margin-left: 20px; }
-
-.image__form {
-  justify-content: center; }
-
-.radio {
-  margin-left: 10px; }
-
-.input {
-  margin-left: 30px; }
-
-div .col-12 {
-  margin-bottom: 50px;
-  justify-content: center; }
-
-.textarea {
-  margin: 40px; }
 
 /*................MEDIAS QUERIES.........................*/
 @media screen and (min-width: 768px) {
