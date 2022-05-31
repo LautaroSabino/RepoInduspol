@@ -8,16 +8,16 @@
 
 .titlepages {
   background-image: url(../img/fotoPortada.png);
-  background-position: 50%;
   background-size: cover;
-  padding: 70px;
+  padding: 40px;
   margin-top: 0%;
   margin-bottom: 30px;
-  width: 100%;
   font-weight: 400;
   text-transform: uppercase;
   color: #E4E3E3;
+  display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   border-bottom: #8697a7 solid 5px; }
 
 .redtitle {
@@ -29,27 +29,31 @@
   margin-top: 5px; }
 
 div .carta {
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center; }
   div .carta .carta {
-    margin: 20px;
+    margin: 30px;
     margin-bottom: 15px; }
 
 /*....................PAGES: EMPRESA....................*/
 .infoEmpresa {
+  display: flex;
   flex-direction: column; }
   .infoEmpresa .empresa {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     .infoEmpresa .empresa .portadaEmpresa {
-      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
       align-items: center; }
       .infoEmpresa .empresa .portadaEmpresa .title_empresa {
         font-weight: 700;
         text-transform: uppercase;
         font-size: xx-large;
-        margin-left: 40px; }
+        margin-left: 20px; }
     .infoEmpresa .empresa .parrafo_empresa {
       margin: 10px;
       padding: 10px;
@@ -58,13 +62,14 @@ div .carta {
     .infoEmpresa .empresa .fotoempresa {
       border: 5px solid #8697a7;
       margin-left: 20px;
-      max-width: 300px;
+      max-width: 30vh;
       max-height: auto; }
     .infoEmpresa .empresa .empresaEsquema {
       flex-direction: column;
       margin: 15px;
-      padding: 20px;
-      border: #8697a7 solid 2px; }
+      padding: 10px;
+      border: #8697a7 solid 2px;
+      text-align: center; }
 
 /*....................PAGES: PRODUCTOS....................*/
 .infoProductos {
@@ -167,8 +172,10 @@ img {
 
 /*.........................HEADER...........................*/
 .header {
-  border-bottom: 4px solid #8697a7;
+  display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 4px solid #8697a7;
   background-color: #161A1D; }
   .header .header__logo {
     width: 100px;
@@ -191,9 +198,11 @@ img {
   padding: 10px;
   border-bottom: #8697a7 solid 4px; }
   .mainIndex .titleCoverpage {
+    display: flex;
     flex-direction: column;
-    justify-content: center; }
+    align-items: center; }
     .mainIndex .titleCoverpage .mainTitle {
+      display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0% auto; }
@@ -232,7 +241,6 @@ footer {
         margin-left: 40px;
         margin: auto 0%; }
     footer .mapRedes .redes {
-      flex-wrap: wrap;
       width: 30rem;
       padding: 30px;
       text-align: center;
@@ -240,16 +248,17 @@ footer {
       margin: auto 0%;
       margin-bottom: 10px; }
   footer .section__anchors {
-    padding: 10px;
+    flex-wrap: wrap;
+    padding: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: center;
-    flex-wrap: wrap;
     background-color: #ba181b;
     border-top: 4px solid #8697a7; }
   footer .footerInfo {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: #E4E3E3;
     border-top: 4px solid #8697a7;
     text-align: left;
@@ -278,11 +287,12 @@ footer {
 
 /*................MEDIAS QUERIES.........................*/
 @media screen and (min-width: 768px) {
-  *main {
-    width: 95%; }
-  .mainIndex {
-    width: 95%; }
-  .titleCoverpage {
-    display: flex;
+  div .mapRedes {
     flex-direction: row;
-    justify-content: space-around; } }
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 30px; }
+  .section__anchors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; } }
