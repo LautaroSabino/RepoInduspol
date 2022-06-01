@@ -3,8 +3,12 @@
 @import "mixins";
 
 .titlepages {
-    background-image: url(../img/fotoPortada.png);
-    background-size:cover;
+    background: {
+        image: url(../img/fotoPortada.png);
+        size: cover
+    }
+
+    ;
     padding: 40px;
     margin-top: 0%;
     margin-bottom: 30px;
@@ -28,10 +32,10 @@
     margin-top: 5px;
 }
 
-div .carta{
+div .carta {
     @include flexEvenly;
 
-    .carta{
+    .carta {
         margin: 30px;
         margin-bottom: 15px;
     }
@@ -43,12 +47,12 @@ div .carta{
 .infoEmpresa {
     display: flex;
     flex-direction: column;
-    
+
     .empresa {
         @include flexColumn;
         flex-wrap: wrap;
 
-        .portadaEmpresa{
+        .portadaEmpresa {
             @include flexColumn;
 
             .title_empresa {
@@ -65,14 +69,14 @@ div .carta{
             font-weight: 500;
             line-height: 26px;
         }
-        
+
         .fotoempresa {
             border: 5px solid $col-cua;
             margin-left: 20px;
             max-width: 30vh;
             max-height: auto;
         }
-        
+
         .empresaEsquema {
             flex-direction: column;
             margin: 15px;
@@ -81,10 +85,10 @@ div .carta{
             text-align: center;
         }
     }
-    
 
-    
-    
+
+
+
 
 }
 
@@ -109,7 +113,7 @@ div .carta{
         line-height: 26px;
     }
 
-    .parrafoEmpresa{
+    .parrafoEmpresa {
         text-align: center;
         text-align: justify;
         margin-left: 20px;

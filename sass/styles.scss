@@ -94,7 +94,7 @@ img {
     border-bottom: 4px solid $col-cua;
     background-color: $col-sec;
 
-    
+
     .header__logo {
         width: 100px;
         height: auto;
@@ -109,7 +109,7 @@ img {
         margin: 15px;
     }
 
-    .formNav{
+    .formNav {
         padding: 30px;
         margin: 10px;
     }
@@ -119,27 +119,30 @@ img {
 /* ...............MAIN.................... */
 
 .mainIndex {
-    background-image: url(../img/fotoPortada.png);
-    background-size: cover;
+    background: {
+        image: url(../img/fotoPortada.png);
+        size: cover;
+    }
+
     padding: 10px;
     border-bottom: $col-cua solid 4px;
-    
+
     .titleCoverpage {
         @include flexColumn;
 
         .mainTitle {
             @include flexColumn;
             margin: 0% auto;
-            
+
             .title {
                 white-space: pre-line;
                 text-align: center;
                 color: $col-ter;
                 margin-top: 50px;
                 font-weight: 400;
-            
+
             }
-            
+
             .subtitle {
                 margin-top: 10px;
                 text-align: center;
@@ -150,7 +153,7 @@ img {
             }
         }
     }
-    
+
 }
 
 
@@ -159,10 +162,10 @@ img {
 footer {
     padding: 10px;
     margin: 5px;
-    
+
     .mapRedes {
         @include flexColumn;
-    
+
         .map {
             padding: 40px;
             text-align: center;
@@ -178,16 +181,16 @@ footer {
                 margin: auto 0%;
             }
         }
-        
+
         .redes {
-            width: 30rem;
+            width: 15rem;
             padding: 30px;
             text-align: center;
             margin-top: 0%;
             margin: auto 0%;
             margin-bottom: 10px;
         }
-        
+
     }
 
     .section__anchors {
@@ -198,7 +201,7 @@ footer {
         text-align: center;
         background-color: $col-pri;
         border-top: 4px solid $col-cua;
-        
+
     }
 
     .footerInfo {
@@ -218,21 +221,22 @@ footer {
         padding: 30px;
         margin: 40px;
     }
-    
+
     .mapTitle {
         padding-bottom: 20px;
         color: $col-pri;
-        
+
     }
+
     .redtitle {
         color: $col-pri;
     }
-    
+
     .redes__logo {
         margin: 20px;
         height: 30px;
     }
-    
+
     .footerLogo {
         width: 100px;
         height: auto;
@@ -257,6 +261,3 @@ footer {
     }
 
 }
-
-
-
