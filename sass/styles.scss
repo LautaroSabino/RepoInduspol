@@ -90,7 +90,7 @@ img {
 /*.........................HEADER...........................*/
 
 .header {
-    @include flexEvenly;
+    @include flex(space-evenly, center);
     border-bottom: 4px solid $col-cua;
     background-color: $col-sec;
 
@@ -114,7 +114,6 @@ img {
         margin: 10px;
     }
 }
-
 
 /* ...............MAIN.................... */
 
@@ -186,9 +185,11 @@ footer {
             width: 15rem;
             padding: 30px;
             text-align: center;
-            margin-top: 0%;
             margin: auto 0%;
+            margin-top: 15px;
             margin-bottom: 10px;
+            background-color: $col-qui;
+            border: solid 2px $col-pri;
         }
 
     }
@@ -205,7 +206,7 @@ footer {
     }
 
     .footerInfo {
-        @include flexAround;
+        @include flex(space-around, center);
         color: $col-ter;
         border-top: 4px solid $col-cua;
         text-align: left;
@@ -254,10 +255,16 @@ footer {
         justify-content: space-evenly;
         align-content: center;
         margin-bottom: 30px;
+        margin-top: 20px;
+
+        .redes {
+            margin-top: 15px;
+        }
     }
 
+
     .section__anchors {
-        @include flexEvenly;
+        @include flex(space-evenly, center);
     }
 
 }

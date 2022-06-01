@@ -33,7 +33,7 @@
 }
 
 div .carta {
-    @include flexEvenly;
+    @include flex(space-evenly, center);
 
     .carta {
         margin: 30px;
@@ -86,10 +86,6 @@ div .carta {
         }
     }
 
-
-
-
-
 }
 
 
@@ -121,7 +117,6 @@ div .carta {
     }
 
 }
-
 
 /*....................PAGES: CONTACTOS....................*/
 

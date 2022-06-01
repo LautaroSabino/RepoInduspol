@@ -1,13 +1,7 @@
-@mixin flexEvenly{
+@mixin flex($justify, $align){
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-@mixin flexAround{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
 }
 
 @mixin flexColumn{
