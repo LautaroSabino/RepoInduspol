@@ -58,10 +58,6 @@ img {
     object-fit: cover;
 }
 
-.flex {
-    display: flex;
-}
-
 /*....................BUTTONS...........................*/
 
 .boton {
@@ -166,7 +162,7 @@ footer {
         @include flexColumn;
 
         .map {
-            padding: 40px;
+            padding: 20px;
             text-align: center;
             background-color: $col-qui;
             border-radius: 10px;
@@ -174,6 +170,7 @@ footer {
             display: flex;
             flex-direction: column;
             white-space: pre-line;
+            margin: 30px;
 
             .mapGoogle {
                 margin-left: 40px;
@@ -183,7 +180,7 @@ footer {
 
         .redes {
             width: 15rem;
-            padding: 30px;
+            padding: 10px;
             text-align: center;
             margin: auto 0%;
             margin-top: 15px;
@@ -259,7 +256,16 @@ footer {
 
         .redes {
             margin-top: 15px;
+            padding: 30px;
+            margin: auto 0%;
+            margin-top: 15px;
+            margin-bottom: 10px;
         }
+
+    }
+
+    .map {
+        padding: 40px;
     }
 
 

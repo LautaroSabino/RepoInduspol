@@ -147,9 +147,6 @@ img {
   border-radius: 16px;
   object-fit: cover; }
 
-.flex {
-  display: flex; }
-
 /*....................BUTTONS...........................*/
 .boton {
   width: 180px;
@@ -229,20 +226,21 @@ footer {
     flex-direction: column;
     align-items: center; }
     footer .mapRedes .map {
-      padding: 40px;
+      padding: 20px;
       text-align: center;
       background-color: #ddc591;
       border-radius: 10px;
       border: solid 2px #ba181b;
       display: flex;
       flex-direction: column;
-      white-space: pre-line; }
+      white-space: pre-line;
+      margin: 30px; }
       footer .mapRedes .map .mapGoogle {
         margin-left: 40px;
         margin: auto 0%; }
     footer .mapRedes .redes {
       width: 15rem;
-      padding: 30px;
+      padding: 10px;
       text-align: center;
       margin: auto 0%;
       margin-top: 15px;
@@ -296,7 +294,13 @@ footer {
     margin-bottom: 30px;
     margin-top: 20px; }
     div .mapRedes .redes {
-      margin-top: 15px; }
+      margin-top: 15px;
+      padding: 30px;
+      margin: auto 0%;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+  .map {
+    padding: 40px; }
   .section__anchors {
     display: flex;
     justify-content: space-evenly;
