@@ -2,6 +2,15 @@
 @import "breakpoints";
 @import "mixins";
 
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
 .titlepages {
     background: {
         image: url(../img/fotoPortada.png);
@@ -127,6 +136,7 @@ div .carta {
 }
 
 .footerForm {
+    display: flex ;
     justify-content: center;
 }
 

@@ -6,6 +6,13 @@
   list-style: none;
   text-decoration: none; }
 
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
 .titlepages {
   background-image: url(../img/fotoPortada.png);
   background-size: cover;
@@ -98,6 +105,7 @@ div .carta {
   margin-left: 25px; }
 
 .footerForm {
+  display: flex;
   justify-content: center; }
 
 .radio {
