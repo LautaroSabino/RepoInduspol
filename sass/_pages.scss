@@ -52,7 +52,6 @@ div .carta {
 
 /*....................PAGES: EMPRESA....................*/
 
-
 .infoEmpresa {
     display: flex;
     flex-direction: column;
@@ -76,6 +75,7 @@ div .carta {
             margin: 10px;
             padding: 10px;
             font-weight: 500;
+            text-align: justify;
             line-height: 26px;
         }
 
@@ -88,15 +88,16 @@ div .carta {
 
         .empresaEsquema {
             flex-direction: column;
+            min-width: 90%;
             margin: 15px;
             padding: 10px;
             border: $col-cua solid 2px;
             text-align: center;
+            
         }
     }
 
 }
-
 
 /*....................PAGES: PRODUCTOS....................*/
 
@@ -155,4 +156,8 @@ div .col-12 {
 
 .textarea {
     margin: 40px;
+}
+
+.botonForm{
+    @include flex (center, center);
 }
