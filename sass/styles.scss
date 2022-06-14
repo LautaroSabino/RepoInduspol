@@ -89,6 +89,7 @@ img {
     @include flex(space-evenly, center);
     border-bottom: 4px solid $col-cua;
     background-color: $col-sec;
+    margin-bottom: 0%;
 
 
     .header__logo {
@@ -107,7 +108,7 @@ img {
 
     .formNav {
         padding: 30px;
-        margin: 10px;
+        margin: 0%;
     }
 }
 
@@ -124,6 +125,7 @@ img {
 
     .titleCoverpage {
         @include flexColumn;
+        margin-top: 0%;
 
         .mainTitle {
             @include flexColumn;
@@ -173,8 +175,7 @@ footer {
             margin: 30px;
 
             .mapGoogle {
-                margin-left: 40px;
-                margin: auto 0%;
+                margin: 0% auto;
             }
         }
 

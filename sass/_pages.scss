@@ -14,10 +14,10 @@
 .titlepages {
     background: {
         image: url(../img/fotoPortada.png);
-        size: cover
+        size: cover;
     }
 
-    ;
+    
     padding: 40px;
     margin-top: 0%;
     margin-bottom: 30px;
@@ -113,6 +113,8 @@ div .carta {
     }
 
     .parrafo_empresa {
+        text-align: center;
+        text-align: justify;
         margin: 10px;
         padding: 10px;
         font-weight: 500;
