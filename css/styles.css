@@ -41,7 +41,10 @@ div .carta {
   align-items: center; }
   div .carta .carta {
     margin: 30px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    padding-top: 10px; }
+  div .carta .cardTitle {
+    padding: 15px; }
 
 /*....................PAGES: EMPRESA....................*/
 .infoEmpresa {
@@ -123,7 +126,7 @@ div .col-12 {
   justify-content: center; }
 
 .textarea {
-  margin: 40px; }
+  margin: 20px; }
 
 .botonForm {
   display: flex;
@@ -210,7 +213,8 @@ img {
 .mainIndex {
   background-image: url(../img/fotoPortada.png);
   background-size: cover;
-  padding: 10px;
+  background-max-width: 100%;
+  background-margin-top: 0%;
   border-bottom: #8697a7 solid 4px; }
   .mainIndex .titleCoverpage {
     display: flex;
@@ -268,11 +272,9 @@ footer {
   footer .section__anchors {
     flex-wrap: wrap;
     padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 15px;
     text-align: center;
     background-color: #ba181b;
-    border-top: 4px solid #8697a7; }
+    border-top: 2px solid #8697a7; }
   footer .footerInfo {
     display: flex;
     justify-content: space-around;
